@@ -3,8 +3,19 @@
     padding: 0;
     font-family: sans-serif;
 }
-
-#logo span{
+.primary-btn{
+    background: #e46161;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: medium;
+}
+button:hover{
+    background: #c05151
+}
+span{
     color: #e46161;
 
 }
@@ -15,12 +26,13 @@
     background: #000;
     justify-content: space-between;
     align-items: center;
-       
+    z-index: 999;
+    
 }
 
 #navbar ul{
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     
 }
@@ -29,17 +41,144 @@
     text-decoration: none;
     color: whitesmoke;
     font-size: large;
-    padding: 2rem;
-    margin: 0 1rem;
+    white-space: nowrap;
+    transition: all 0.3s;
+    padding: 40px;
+    
 
 }
 
 #navbar ul li a:hover{
     background: #e46161;
-    border-radius: 0.5rem;
+    border-radius: 0px 0px 5px 5px;
+    
 }
 
-h1{
+#logo{
     color: bisque;
-    padding: 2rem;
+    padding: 35px;
+}
+
+.hero-container{
+    background: url(/images/dev.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#hero{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    gap: 20px;
+}
+
+#hero h1{
+    font-weight: bolder;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-top: 20px;
+    height: 150px;
+}
+
+#about p{
+    color: #333;
+}
+
+#service{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #81aee2;
+    gap: 80px;
+    padding: 10px;
+    height: 300px;
+    
+}
+
+#service ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: larger;
+    gap: 100px;
+}
+
+#service ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+#container{
+    display: flex;
+   
+}
+
+#contact{
+    background-color: #e46161;
+    color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    
+}
+
+#contact-form input{
+    height: 30px;
+    border-radius: 5px;
+}
+#contact-btn{
+    background-color: #333;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+#pricing{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #6affdf33;
+    padding: 20px;
+    width: 50%;
+    font-size: large;
+}
+
+
+table, td, th{
+    background-color: beige;
+    border: 2px solid #e46161 ;
+    height: 80px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100px;
+    background: #333;
+    color: whitesmoke;
 }

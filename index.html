@@ -1,23 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AmmadSheikh</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav id="navbar">
-        <h1 id="logo"><span>Life</span>Long</h1>
+        <h1 id="logo"><span>Ammad</span>Temp</h1>
         <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#What">What</a></li>
-            <li><a href="#Who">Who</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <header>
-
+        <div class="hero-container">
+            <div id="hero">
+                <h1>Ammad Sheikh</h1>
+                <p>Web Developer | Designer</p>
+                <button class="primary-btn" onclick="">Read More</button>
+            </div>
+        </div>
     </header>
+    <section id="about">
+        <h2><span>About</span> Me</h2>
+        <p>I’m a passionate web developer with expertise in Html, Css, and frontend design. I love building interactive
+            and user-friendly web applications.</p>
+    </section>
+    <section id="service">
+        <h2><span>My</span> Services</h2>
+        <ul>
+            <li><img src="/images/coding.png" alt="" width="100px">Web development</li>
+            <li><img src="/images/graphic-design.png" alt="" width="100px">Web Designing</li>
+            <li><img src="/images/seo.png" alt="" width="100px">Seo</li>
+        </ul>
+    </section>
+    <section id="container">
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <p>Please use the form below to contact us</p>
+            <form id="contact-form" name="contact" netlify>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Abdul Rehman" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="naeem@example.com" required>
+                <br>
+                <label for="subject">Subject:</label>
+                <select name="subject" id="subject">
+                    <option value="">Web Development</option>
+                    <option value="">Web Designing</option>
+                    <option value="">Seo</option>
+                </select><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0312-1234567" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="2" placeholder="Your message" required></textarea><br>
+                <button id="contact-btn" type="submit">Send</button>
+            </form>
+        </div>
+        <div id="pricing">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>$10/month</td>
+                    <td>Feature 1, Feature 2</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>$20/month</td>
+                    <td>Feature 1, Feature 2, Feature 3</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>$30/month</td>
+                    <td>Feature 1, Feature 2, Feature 3, Feature 4</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        Copyright © 2025, AmmadTemp, All Rights Reserved
+    </footer>
 </body>
+
 </html>
