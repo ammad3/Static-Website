@@ -181,10 +181,18 @@ table, td, th{
 
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: auto;
     height: 100px;
     background: #333;
     color: whitesmoke;
+    gap: 10px;
+}
+
+#social-links ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
 }
