@@ -8,6 +8,10 @@
 html{
     scroll-behavior: smooth;
 }
+
+body{
+    min-height: 100vw;
+}
 .primary-btn{
     background: #e46161;
     width: 120px;
@@ -32,14 +36,18 @@ span{
     justify-content: space-between;
     align-items: center;
     z-index: 999;
-    height: 60px;
+    max-width: 1200px, 100%;
+    height: 4rem;
+    top: 0;
+    
     
 }
 
 #navbar ul{
     display: flex;
-    gap: 40px;
+    gap: 1.5rem;
     list-style: none;
+    
     
 }
 
@@ -49,9 +57,7 @@ span{
     font-size: large;
     white-space: nowrap;
     transition: all 0.3s;
-    padding: 20px;
-    
-
+    padding: 1rem;
 }
 
 #navbar ul li a:hover{
@@ -72,10 +78,10 @@ span{
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    padding: 1rem;
 }
 
 #hero{
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,8 +100,10 @@ span{
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    padding-top: 20px;
-    height: 150px;
+    padding: 1rem;
+    height: 20vh;
+    width: 100%;
+
 }
 
 #about p{
@@ -109,7 +117,7 @@ span{
     background: #81aee2;
     gap: 80px;
     padding: 10px;
-    height: 300px;
+    height: 50vh;
     
 }
 
@@ -118,7 +126,7 @@ span{
     align-items: center;
     list-style: none;
     font-size: larger;
-    gap: 100px;
+    gap: 4rem;
 }
 
 #service ul li{
@@ -166,7 +174,7 @@ span{
     flex-direction: column;
     gap: 40px;
     background-color: #6affdf33;
-    padding: 20px;
+    padding: 1rem;
     width: 50%;
     font-size: large;
 }
@@ -184,8 +192,8 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 20vh;
     background: #333;
     color: whitesmoke;
     gap: 10px;
@@ -195,4 +203,94 @@ footer{
     display: flex;
     list-style: none;
     gap: 10px;
+}
+
+
+@media only screen and (max-width:455px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        background: #000;
+        z-index: 999;
+        top: 0; 
+        padding: 1rem;
+        width: 100%;     
+    }
+
+    #navbar ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;       
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: large;
+        white-space: nowrap;
+        transition: all 0.3s;
+        padding: 1px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    #pricing{
+        display: flex;
+        flex-direction: column;
+        background-color: #6affdf33;
+        padding: 1rem;
+        width: 100%;
+        font-size: large;
+    }
+
+    #service{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #81aee2;
+        height: auto;  
+        width: 100%;
+        padding: 1rem;
+        
+    }
+
+    #service ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        font-size: larger;
+        gap: 4rem;
+    }
+    #service ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact{
+        background-color: #e46161;
+        color: whitesmoke;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        background: #333;
+        color: whitesmoke;
+        gap: 10px;
+        padding: 1rem;
+    }
+
 }
