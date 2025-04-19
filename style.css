@@ -11,6 +11,7 @@ html{
 
 body{
     min-height: 100vw;
+    overflow-x: hidden;
 }
 .primary-btn{
     background: #e46161;
@@ -32,23 +33,19 @@ span{
 #navbar{
     display: flex;
     position: sticky;
-    background: #000;
+    background: #252525d7;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
     max-width: 1200px, 100%;
     height: 4rem;
-    top: 0;
-    
-    
+    top: 0;   
 }
 
 #navbar ul{
     display: flex;
     gap: 1.5rem;
-    list-style: none;
-    
-    
+    list-style: none;  
 }
 
 #navbar ul li a{
@@ -62,8 +59,7 @@ span{
 
 #navbar ul li a:hover{
     background: #e46161;
-    border-radius: 0px 0px 5px 5px;
-    
+    border-radius: 0px 0px 5px 5px;   
 }
 
 #logo{
@@ -72,22 +68,23 @@ span{
 }
 
 .hero-container{
-    background: url(/images/dev.jpg);
+    background: url(/images/blue.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: auto;
 }
 
 #hero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 200px;
-    left: 100px;
+    position: relative;
     gap: 20px;
 }
 
@@ -114,7 +111,7 @@ span{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #81aee2;
+    background: #32A9EB;
     gap: 80px;
     padding: 10px;
     height: 50vh;
@@ -173,7 +170,7 @@ span{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: #6affdf33;
+    background-color: #fff;
     padding: 1rem;
     width: 50%;
     font-size: large;
@@ -182,8 +179,9 @@ span{
 
 table, td, th{
     background-color: beige;
-    border: 2px solid #e46161 ;
+    border: 2px solid #61bfe4 ;
     height: 80px;
+    text-align: center;
 }
 
 
@@ -244,12 +242,21 @@ footer{
         width: 100%;
         font-size: large;
     }
-
+    #about{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 1rem;
+        height: 100%;
+        width: 100%;
+    
+    }
     #service{
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: #81aee2;
+        background: #32A9EB;
         height: auto;  
         width: 100%;
         padding: 1rem;
