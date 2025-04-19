@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmmadSheikh</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav id="navbar">
-        <h1 id="logo"><span>Ammad</span>Temp</h1>
+        <div class="logo"><i class="fa-solid fa-dumbbell"></i>
+            <h1 id="logo-text">AMMAD</h1>
+        </div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -18,86 +23,81 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <!-- Hero Section -->
     <header id="home">
         <div class="hero-container">
             <div id="hero">
-                <h1>Ammad Sheikh</h1>
-                <p>Web Developer | Designer</p>
-                <button class="primary-btn" onclick="">Read More</button>
+                <h1>HI THIS IS AMMAD</h1>
+                <p>GYM TRAINER</p>
+                <button class="primary-btn" onclick="">Get Started</button>
             </div>
         </div>
     </header>
+
+    <!-- About Section -->
     <section id="about">
+        <br>
         <h2><span>About</span> Me</h2>
-        <p>I’m a passionate web developer with expertise in Html, Css, and frontend design. I love building interactive
-            and user-friendly web applications.</p>
+        <p>Dedicated and motivating gym trainer with a passion for helping people reach their fitness goals. I
+            specialize in personalized workout plans, strength training, weight loss programs, and improving overall
+            health. Whether you're a beginner or looking to level up your routine, I'm here to guide, support, and push
+            you toward a stronger, healthier lifestyle. Let's crush your goals together!</p>
     </section>
+
+    <!-- Features/Services Section -->
     <section id="service">
+        <br>
         <h2><span>My</span> Services</h2>
-        <ul>
-            <li><img src="/images/coding.png" alt="" width="100px">Web development</li>
-            <li><img src="/images/graphic-design.png" alt="" width="100px">Web Designing</li>
-            <li><img src="/images/seo.png" alt="" width="100px">Seo</li>
-        </ul>
-    </section>
-    <section id="container">
-        <div id="contact">
-            <h2>Contact Us</h2>
-            <p>Please use the form below to contact us</p>
-            <form id="contact-form" name="contact" netlify>
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Abdul Rehman" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="naeem@example.com" required>
-                <br>
-                <label for="subject">Subject:</label>
-                <select name="subject" id="subject">
-                    <option value="">Web Development</option>
-                    <option value="">Web Designing</option>
-                    <option value="">Seo</option>
-                </select><br>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="0312-1234567" required>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="2" placeholder="Your message" required></textarea><br>
-                <button id="contact-btn" type="submit">Send</button>
-            </form>
-        </div>
-        <div id="pricing">
-            <h2>Pricing</h2>
-            <table>
-                <tr>
-                    <th>Plan</th>
-                    <th>Price</th>
-                    <th>Features</th>
-                </tr>
-                <tr>
-                    <td>Basic</td>
-                    <td>$10/month</td>
-                    <td>Feature 1, Feature 2</td>
-                </tr>
-                <tr>
-                    <td>Standard</td>
-                    <td>$20/month</td>
-                    <td>Feature 1, Feature 2, Feature 3</td>
-                </tr>
-                <tr>
-                    <td>Premium</td>
-                    <td>$30/month</td>
-                    <td>Feature 1, Feature 2, Feature 3, Feature 4</td>
-                </tr>
-            </table>
+        <div class="services-container">
+            <div class="service-card">
+                <img class="service-img" src="/images/workplan.png" alt="workout Plan">
+                <h3>Personalized Workout Plans</h3>
+                <p>Tailored exercise routines based on fitness level, body type, and goals (e.g., weight loss, muscle
+                    gain, endurance).</p>
+            </div>
+            <div class="service-card">
+                <img class="service-img" src="/images/training.png" alt="Training Sessions">
+                <h3>One-on-One Training Sessions</h3>
+                <p>In-gym or online sessions with direct coaching, motivation, and real-time corrections.</p>
+            </div>
+            <div class="service-card">
+                <img class="service-img" src="/images/group.png" alt="Group Fitness">
+                <h3>Group Fitness Classes</h3>
+                <p>Leading classes such as HIIT, strength training, cardio, boot camps, or circuit training.</p>
+            </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <br>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for any inquiries or collaborations.</p>
+        <form id="contact-form" name="contact" netlify>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <br>
+            <button id="contact-btn" type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>Copyright © 2025, AmmadTemp, All Rights Reserved</p>
         <div id="social-links">
             <ul>
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/facebook.png" alt="facebook" width="20px"></a></li>
-                <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/github.png" alt="facebook" width="20px"></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="images/icons/linkedin.png" alt="facebook" width="20px"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/facebook.png" alt="facebook" width="20px"></a></li>
+                <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/github.png" alt="github" width="20px"></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/linkedin.png" alt="linkedin" width="20px"></a></li>
             </ul>
         </div>
     </footer>
